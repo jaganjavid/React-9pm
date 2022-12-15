@@ -1,8 +1,6 @@
-/* h1{
-    color: green;
-    background-color: red;
-} */
-
+*{
+  margin: 0px;
+}
 
 body{
     background-color: #efefef;
@@ -13,19 +11,52 @@ body{
     /* SAME AS ABOVE */
     /* font: normal 16px Arial, Helvetica, sans-serif; */
     line-height: 1.6;
+    /* margin: 0px; */
+}
+
+
+/* In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element.
+ It consists of: margins, borders, padding, and the actual content. */
+
+.container{
+    width: 80%;
+    margin: 0px auto;
 }
 
 .box{
   background-color: rgb(61, 61, 61); 
   color: white;
+  border: 3px solid blue;
+  /* border-top: 5px solid blue;
+  border-right: 15px dashed red;
+  border-left: 25px dotted green;
+  border-bottom: 35px double yellow; */
+  /* padding-top: 70px;
+  padding-left: 100px;
+  padding-right: 150px;
+  padding-bottom: 180px; */
+  padding: 50px;
+  /* margin-top: 70px;
+  margin-left: 100px;
+  margin-right: 120px;
+  margin-bottom: 150px; */
+  /* margin: 50px; */
+
+  /* TOP > RIGHT > BOTTOM > LEFT */
+  /* margin: 50px 70px 80px 100px; */
+
+  /* TOP & BOTTOM > LEFT & RIGHT */
+  /* margin: 50px 100px; */
 }
 
 /* .box h1{
-    color: #F31A1A;
+    margin: 0px;
+}
+.box p{
+    margin: 0px;
 } */
-/* .box h1{
-    color: rgb(243, 27, 27);
-} */
-/* .box h1{
-    color: rgba(243, 27, 27,0.5);
-} */
+
+
+/* Hey im updated */
