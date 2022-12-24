@@ -1,5 +1,6 @@
 *{
   margin: 0px;
+  box-sizing: border-box;
 }
 
 body{
@@ -57,6 +58,138 @@ The CSS box model is essentially a box that wraps around every HTML element.
 .box p{
     margin: 0px;
 } */
+.heading{
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.categories{
+  padding: 50px 0px;
+}
+
+.categories ul{
+  padding: 0px;
+  list-style: none;
+}
+
+.categories ul{
+  border: solid 1px #333;
+  border-radius: 15px;
+}
+
+.categories ul li{
+   padding: 10px 15px;
+   border-bottom: solid 1px #333;
+}
+
+.no-border{
+  border-bottom: none !important;
+}
 
 
-/* Hey im updated */
+/* FORM START */
+.my-form .form-group{
+  padding-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+}
+
+.my-form input[type="text"],.my-form input[type="email"],textarea{
+  padding: 8px;
+  width: 100%;
+}
+
+textarea{
+  height: 150px;
+}
+
+.my-form input[type="submit"]{
+  background-color: #111111;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+}
+
+/* FORM END */
+
+.three-box{
+  padding: 50px 0px;
+}
+
+.block{
+  float: left;
+  width: 30%;
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 15px;
+}
+
+.clr{
+  clear: both;
+}
+
+
+.pos-box{
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+  /* margin: 0px auto; */
+  position: relative;
+  /* top: 50px;
+  left: 50px; */
+}
+
+.pos-box-child-1{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.pos-box-child-2{
+  width: 100px;
+  height: 100px;
+  background-color: #47fe1e;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.pos-box-child-3{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  top: 0px;
+  right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+/* .box-size-1{
+  width: 200px;
+  height: 200px;
+  border: 2px solid blue;
+  margin-bottom: 50px;
+  padding: 50px;
+}
+
+.box-size-2{
+  width: 200px;
+  height: 200px;
+  border: 2px solid blue;
+  padding: 50px;
+  box-sizing: border-box;
+} */
+
