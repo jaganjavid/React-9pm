@@ -149,7 +149,7 @@ header{
 }
 
 .job-box h4{
-  font-size: 28px;
+  font-size: 25px;
   margin:15px 0px 10px 0px;
 }
 
@@ -198,6 +198,23 @@ footer p{
     .banner-wrapper h1{
         font-size: 35px;
     }
+
+    .the-job-wrapper{
+        flex-direction: column;
+    }
+
+    .job-box{
+        padding: 15px;
+    }
+
+    .job-box h4{
+        font-size: 22px;
+    }
+
+    .job-btn a{
+        padding: 8px 10px;
+        font-size: 12px;
+    }
 }
 
 
@@ -213,9 +230,39 @@ footer p{
     .banner-wrapper h1 span{
         display: inline;
     }
+
     .banner-btn{
         justify-content: center;
         margin-bottom: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 576px){
+    .logo h4{
+        font-size: 16px;
+    }
+
+    .banner-btn a{
+        padding: 15px;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .header-wrapper ul {
+        gap: 10px;
+    }
+
+    .the-job-wrapper .job-box:first-child{
+        order: 2;
+    }
+    .the-job-wrapper .job-box:nth-child(2){
+        order: 1;
+    }
+    .the-job-wrapper .job-box:last-child{
+        order: 3;
     }
 }
 
