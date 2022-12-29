@@ -61,7 +61,7 @@ ul{
 
 /* Heading Styles */
 h1{
-    font-size: 94px;
+    font-size: 92px;
     color: #ffffff;
 }
 
@@ -214,6 +214,91 @@ header {
 /* SECTION SOLUTION END */
 
 
+/* Social Media Start*/
+.social-media{
+    padding: 80px 0px;
+    background-color: #231A36;
+    color: #ffffff;
+}
+
+.social-media h2{
+    color: #ffffff;
+}
+
+.sm-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sm-wrapper span{
+    color: #7B9292;
+    display: inline-block;
+    margin:5px 0px 0px 0px;
+}
+
+
+/* Social Media End*/
+
+
+/* Section Nedd Start */
+.need{
+    padding: 80px 0px;
+}
+
+.need-box{
+    position: relative;
+}
+
+.need-box>img{
+    width: 100%;
+}
+
+.need-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.need-wrapper h5{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.need-wrapper .btn a{
+    background-color: transparent;
+    color: #B33CDB;
+    padding-left: 0px;
+}
+
+.need-box-ab{
+    background-color: #ffffff;
+    width: 80%;
+    padding: 10px;
+    color: #111111;
+    position: absolute;
+    bottom: -80.5px;
+    left: 0px;
+    transition: all .30s;
+}
+
+.need-box:hover .need-box-ab{
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.need-box-ab h4{
+    font-size: 24px;
+}
+
+.need-box-inner{
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* Section Nedd End */
+
+
+
 /* Responsive Start */
 @media only screen and (max-width: 768px){
     header .btn, nav{
@@ -249,34 +334,45 @@ header {
         margin-bottom: 50px;
     }
 
-    /* .solutions>div>div:nth-child(3) .solution-box-img{
+    .sm-wrapper div{
+        width: 50%;
         text-align: center;
-    } */
+    }
+
+    .sm-wrapper div:first-child, 
+    .sm-wrapper div:nth-child(2){
+        margin-bottom: 20px;
+    }
+
+    .need-wrapper{
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .need-wrapper>div:not(.need-wrapper>div:last-child){
+        margin-bottom: 80px;
+    }
+
 }
+
+@media only screen and (max-width: 998px){
+    .need-box-ab{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    .need-box-inner h4{
+        font-size: 18px;
+    }
+    .need-box-inner span{
+        font-size: 14px;
+    }
+}
+
 /* Responsive End */
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* .wid{
-    width: 600px;
-    height: 300px;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-}
-
-.max-wid {
-    max-width: 600px;
-    height: 300px;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-} */
