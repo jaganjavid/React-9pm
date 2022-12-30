@@ -298,6 +298,103 @@ header {
 /* Section Nedd End */
 
 
+/* Section happy Start */
+.happy{
+    padding: 80px 0px;
+}
+
+.section-heading h2{
+    position: relative;
+    display: inline-block;
+}
+
+.ab-img{
+    position: absolute;
+    top: -30px;
+    right: -50px;
+}
+
+.happy-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.happy-wrapper>div{
+    width: 50%;
+}
+.happy-wrapper>div p{
+    color:#6D6D6D;
+    font-size: 22px;
+    line-height: 36px;
+    font-style: italic;
+    margin: 25px 0px;
+}
+
+
+.happy-wrapper>div:last-child{
+    text-align: center;
+}
+
+
+/* Section happy End */
+
+
+/* Section Newsletter Start */
+.newsletter-wrapper{
+    background: url("./img/newsletter/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    border-radius: 25px;
+    color: #ffffff;
+    position: relative;
+}
+.newsletter .section-heading h2,.newsletter .section-heading p{
+    color: #ffffff;
+}
+.newsletter .btn{
+    text-align: center;
+}
+.newsletter-wrapper>div:last-child img:first-child{
+    position: absolute;
+    bottom: 50px;
+    left: -61px;
+    z-index: -1;
+}
+.newsletter-wrapper>div:last-child img:last-child{
+    position: absolute;
+    top: 50px;
+    right: -61px;
+    z-index: -1;
+}
+/* Section Newsletter End */
+
+/* Footer Section Start */
+footer{
+    padding: 50px 0px;
+}
+footer img{
+    filter: invert(1);
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid grey;
+}
+
+.footer-wrapper ul{
+    display: flex;
+    gap: 25px;
+}
+
+.cp-write{
+    text-align: center;
+    margin-top: 30px;
+}
+/* Footer Section End */
+
 
 /* Responsive Start */
 @media only screen and (max-width: 768px){
@@ -354,6 +451,29 @@ header {
         margin-bottom: 80px;
     }
 
+    .happy-wrapper{
+        flex-direction: column;
+    }
+    .happy-wrapper>div{
+        width: 100%;
+        text-align: center;
+    }
+
+    .happy-wrapper>div:first-child{
+        margin-bottom: 50px;
+    }
+
+    .footer-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .footer-wrapper img{
+        width: 150px;
+    }
+    
+
 }
 
 @media only screen and (max-width: 998px){
@@ -376,6 +496,4 @@ header {
 /* Test */
 
 /* Responsive End */
-
-
 
