@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap');
+@import "./variable.scss";
+
+@mixin myFlex{
+    display: flex;
+}
+
+@mixin myFlexmore{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+// // THis is for SCSS
+
+// $primary-color: #000000;
+// $sec-color: #4D4D4D;
+// $third-color: #81ADC8;
+// $heading-one: 65px;
+// $heading-two: 40px;
+// $heading-three: 25px;
+// $heading-four: 16px;
+
+
+// THis is for Css
+
+// :root{
+//    --primary-color: #000000;
+//    --sec-color: #4D4D4D;
+//    --third-color: #000305;
+//    --heading-one: 65px;
+//    --heading-two: 40px;
+//    --heading-three: 25px;
+//    --heading-four: 16px;
+// }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.container {
+    width: 1100px;
+    margin: 0px auto;
+}
+
+// .header-wrapper{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .header-wrapper>div:first-child{
+//     background-color: green;
+// }
+
+
+.header-wrapper{
+    @include myFlexmore(); // 3
+    >div:first-child{
+        @include myFlexmore(); // 3
+        width: 40%;
+        ul{
+            @include myFlex(); // 1
+            gap: 30px;
+        }
+    }
+    >div:last-child{
+        @include myFlex(); // 1
+        gap: 35px;
+      .btn{
+        padding: 8px 15px;
+        color: #000000;
+        border: 1px solid #000000;
+        border-radius: 8px;
+      }
+      .btn-solid{
+        @extend .btn;
+        background-color: #000000;
+        color: #ffffff;
+      }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .test-flex{
+//     @include myFlex();
+//     gap: 20px;
+//     div{
+//         width: 50%;
+//         height:300px;
+//         background-color: blue;
+//     }
+// }
+
+
+// .test-flex-2{
+//     @include myFlex();
+//     gap: 25px;
+//     div{
+//         width: 50%;
+//         height:300px;
+//         background-color: rgb(64, 255, 0);
+//     }
+// }
+
+
+// .btn-basic  {
+//     border: none;
+//     padding: 15px 30px;
+//     text-align: center;
+//     font-size: 16px;
+//     cursor: pointer;
+//     color: black;
+//     background-color: green;
+// }
+
+// .btn-hold{
+//     @extend .btn-basic; 
+//     background-color: rgb(244, 21, 84);
+// }
+
+// .btn-three{
+//     @extend .btn-basic;
+//     background-color: rgb(255, 0, 0);
+// }
