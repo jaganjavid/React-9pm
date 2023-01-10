@@ -19,14 +19,17 @@ body {
 
 h1 {
   font-size: 65px;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 40px;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 25px;
+  font-weight: 700;
 }
 
 h4 {
@@ -175,6 +178,17 @@ header .header-wrapper > div > ul > li:last-child ul li a:hover {
   bottom: 25px;
   color: #81ADC8;
 }
+.banner .banner-img .banner-icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.banner .banner-img .banner-icon img {
+  width: 25px;
+}
 @media screen and (max-width: 768px) {
   .banner .banner-img {
     flex-direction: column;
@@ -195,4 +209,16 @@ header .header-wrapper > div > ul > li:last-child ul li a:hover {
   .banner h3 {
     font-size: 20px;
   }
+}
+.banner .supported {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+.banner .supported img {
+  width: 120px;
 }/*# sourceMappingURL=style.css.map */

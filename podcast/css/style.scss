@@ -63,12 +63,15 @@ body{
 
 h1{
     font-size: $heading-one;
+    font-weight: 700;
 }
 h2{
     font-size: $heading-two;
+    font-weight: 700;
 }
 h3{
     font-size: $heading-three;
+    font-weight: 700;
 }
 h4{
     font-size: $heading-four;
@@ -224,6 +227,24 @@ header{
             color: $third-color;
         }
     }
+    .banner-icon{
+        @include myFlex();
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        img{
+            width: 25px;
+        }
+
+        // @media screen and (max-width: 992px) {
+        //     h3{
+        //         right: 20px;
+        //     }
+          
+        // }
+    }
    }
    @media screen and (max-width: 768px) {
     .banner-img{
@@ -245,6 +266,21 @@ header{
     h3{
         font-size: 20px;
     }
+  
+   }
+
+   .supported{
+     margin-top: 80px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 30px;
+     border-top: 1px solid #000000;
+     border-bottom: 1px solid #000000;
+   }
+
+   .supported img{
+    width: 120px;
    }
 }
 
